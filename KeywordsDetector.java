@@ -22,10 +22,10 @@ public class KeywordsDetector {
     // If a sentence contains one or more of the kewords, prints it.
     public static void detectAndPrint(String[] sentences, String[] keywords) {
         for (String sentence : sentences) {
-            String lowerCaseSentence = MyString.lowerCase(sentence);
+            String lowerCaseSentence = sentence.toLowerCase();
             for (String keyword : keywords) {
-                String lowerCaseKeyword = MyString.lowerCase(keyword);
-                if (MyString.contains(lowerCaseSentence, lowerCaseKeyword)) {
+                String lowerCaseKeyword = keyword.toLowerCase();
+                if (lowerCaseSentence.contains(lowerCaseKeyword)) {
                     System.out.println(sentence);
                     break;
                 }
