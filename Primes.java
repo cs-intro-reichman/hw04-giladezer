@@ -17,7 +17,7 @@ public class Primes {
         for (int i = 2; i <= n; i++) {
             if (isPrime(i)) {
                 count ++;
-                System.out.print(i + " ");
+                System.out.println(i );
             }
         }
        System.out.println( "There are " + count + " primes between 2 and 7");
