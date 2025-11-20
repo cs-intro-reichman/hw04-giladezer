@@ -172,6 +172,11 @@ public class ArrCharOps {
 
         int len1 = str1.length();
         int len2 = str2.length();
+
+        if(len1 == 0 || len2 == 0) {
+            return -2;
+        }
+
         int minLen = Math.min(len1, len2);
 
         for (int i = 0; i < minLen; i++) {
